@@ -1,4 +1,4 @@
-from day2.solver import *
+from day3.solver import *
 from solver_tester import *
 
 from datetime import datetime
@@ -11,5 +11,5 @@ with open(f"day{DAY}/input.txt","r") as puzzle_input:
 testp1(part1,DAY)
 #print(part1(full_input))
 
-#testp2(part2,DAY)
+testp2(part2,DAY)
 #print(part2(full_input))
