@@ -1,8 +1,11 @@
 from datetime import datetime
 from os import mkdir, system
-import requests
+import requests,time
 
-
+while 1:
+    if (datetime.now().hour >= 5):
+        break
+    time.sleep(2)
 
 DAY = datetime.now().day
 
