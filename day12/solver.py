@@ -178,7 +178,7 @@ def dfs_traversal_look_ahead(springs, groups, previous="", cache={}, print_cache
     unknown_empty = len([spring for spring in springs if spring[1] == '?']) == 0
     if len(groups) == 0:
         if damaged_empty:
-            print(previous+run_length_decode(springs))
+            # print(previous+run_length_decode(springs))
             return 1
         else:
             #print("return bad")
@@ -226,7 +226,7 @@ def part2(input_data):
         line = unfold(line)
         springs, groups = parse_line(line)
         print(groups)
-        outcome = dfs_traversal_look_ahead(springs, groups,print_cache=False)
+        outcome = dfs_traversal_look_ahead(springs, groups,print_cache=True)
         print(outcome)
         sum += outcome
     return sum

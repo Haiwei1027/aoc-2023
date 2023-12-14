@@ -1,5 +1,5 @@
 
-def test(solver, test_filepath):
+def test(solver, test_filepath, id=None):
     #get input and expected results
     tests = {}
     
@@ -17,6 +17,9 @@ def test(solver, test_filepath):
     print(f"loaded {len(tests)} tests")
     #run tests and print outcome
     for expected in tests:
+        if id != None:
+            if expected != str(id):
+                continue
         result = str(solver(tests[expected]))
         if result == expected:
             print(f"{expected} passed")
@@ -24,10 +27,10 @@ def test(solver, test_filepath):
             print(f"{expected} failed, got {result} instead")
     pass
 
-def testp1(solver, day):
-    test(solver, f"day{day}/test1.txt")
+def testp1(solver, day, id=None):
+    test(solver, f"day{day}/test1.txt", id=id)
     pass
 
-def testp2(solver, day):
-    test(solver, f"day{day}/test2.txt")
+def testp2(solver, day, id=None):
+    test(solver, f"day{day}/test2.txt", id=id)
     pass
