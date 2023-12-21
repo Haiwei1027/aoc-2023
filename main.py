@@ -1,4 +1,4 @@
-from day19.solver import *
+from day21.solver import *
 from solver_tester import *
 
 from datetime import datetime
