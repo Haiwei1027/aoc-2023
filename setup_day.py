@@ -20,13 +20,6 @@ def part2(input_data):
     pass
 """
 
-if DAY == 18:
-    system('msg * "Abbie birthday"')
-elif DAY == 22:
-    system('msg * "Eddie birthday"')
-elif DAY == 24:
-    system('msg * "Catherine birthday"')
-
 system(f"start \"\" https://adventofcode.com/2023/day/{DAY}")
 try:
     mkdir(f"day{DAY}")

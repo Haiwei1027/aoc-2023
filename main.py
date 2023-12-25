@@ -1,8 +1,10 @@
-from day22.solver import *
+from day24.solver import *
 from solver_tester import *
 
 from datetime import datetime
 DAY = datetime.now().day
+
+DAY = 24
 
 full_input = []
 with open(f"day{DAY}/input.txt","r") as puzzle_input:
